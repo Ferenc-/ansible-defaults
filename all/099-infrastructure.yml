@@ -19,6 +19,9 @@ cephclient_keyring_name: client.admin
 # openldap
 
 openldap_host: "{{ hostvars[inventory_hostname]['ansible_' + management_interface]['ipv4']['address'] }}"
+openldap_ldap_port: 389
+openldap_ldaps_port: 636
+openldap_base_dn: dc=scs-organization,dc=intranet
 
 ##########################
 # openstackclient
